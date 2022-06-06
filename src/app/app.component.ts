@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Customer';
+  title = 'InteraccionComponentes';
+  clienteActual = "Juanita";
+  customers = ['Ana','Alba','Diana','Flor'];
+
+  addCustomer(newCustomer: string){
+    this.customers.push(newCustomer);
+  }
 }
